@@ -1,12 +1,12 @@
 # Piper Page Reader voice assets
 
-This repository serves optional Piper ONNX voice weights through immutable GitHub Release assets. The browser extension source and bundled runtime live in a separate repository. Large ONNX files are release attachments, not Git history.
+This public repository serves Piper ONNX voice weights through immutable GitHub Release assets. The browser extension source remains in a separate private repository. Large ONNX files are release attachments, not Git history.
 
 ## Multilingual catalog
 
 [voices-v3.json](voices-v3.json) lists 49 languages, 51 production voices, immutable upstream sources, file sizes and SHA-256 digests. [Release v3](https://github.com/Masih-Roughani/Piper-TTS-voice-assets/releases/tag/v3) carries the new weights, original configurations and attribution cards; existing weights remain in v1/v2.
 
-Mana (Persian) and Ryan High (English) ship inside the extension. Every other voice downloads only when selected for reading or preview, then stays cached locally. The source repository never serves optional models. The interface can use any of the same 49 languages.
+No voice weight ships inside the extension or downloads during installation. Ganji is the default Persian voice. Ganji, Mana, Ryan High and every other production voice download from this repository only after the user first plays that voice, then remain cached locally. The private source repository never serves model downloads. The interface can use any of the same 49 languages.
 
 Japanese, Hebrew, Lithuanian and Thai require dedicated phonemizers and are excluded from this eSpeak build. The 46 new optional languages passed actual eSpeak WASM + ONNX Runtime Web WASM synthesis. Audio quality has not been subjectively certified across all languages.
 
@@ -25,4 +25,4 @@ The extension verifies size and SHA-256 before caching and using a downloaded mo
 
 Gooya's repository declares MIT. Ryan High's [model card](https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/ryan/high/MODEL_CARD) identifies its training dataset as **CC BY-NC-SA 4.0**. This repository preserves that attribution and does not assert broader rights to either voice. Check the source terms before commercial distribution.
 
-Mana and Ganji are hosted in v3; only Mana is bundled in the current extension. Lessac High is excluded from the production catalog. Each other voice retains the terms in its original MODEL_CARD attachment. Hosting a model here does not relicense it or its training dataset.
+Mana and Ganji are hosted in v3 and download on first use. Lessac High is excluded from the production catalog. Each other voice retains the terms in its original MODEL_CARD attachment. Hosting a model here does not relicense it or its training dataset.
