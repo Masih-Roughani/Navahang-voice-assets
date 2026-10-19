@@ -1,10 +1,10 @@
-# Piper Page Reader voice assets
+# Navahang voice assets
 
-This public repository serves Piper ONNX voice weights through immutable GitHub Release assets. The browser extension source remains in a separate private repository. Large ONNX files are release attachments, not Git history.
+This public repository serves Navahang voice weights built on the Piper engine through immutable GitHub Release assets. The browser extension source remains in a separate private repository. Large ONNX files are release attachments, not Git history.
 
 ## Multilingual catalog
 
-[voices-v3.json](voices-v3.json) lists 49 languages, 51 production voices, immutable upstream sources, file sizes and SHA-256 digests. [Release v3](https://github.com/Masih-Roughani/Piper-TTS-voice-assets/releases/tag/v3) carries the new weights, original configurations and attribution cards; existing weights remain in v1/v2.
+[voices-v3.json](voices-v3.json) lists 49 languages, 51 production voices, immutable upstream sources, file sizes and SHA-256 digests. [Release v3](https://github.com/Masih-Roughani/Navahang-voice-assets/releases/tag/v3) carries the new weights, original configurations and attribution cards; existing weights remain in v1/v2.
 
 No voice weight ships inside the extension or downloads during installation. Ganji is the default Persian voice. Ganji, Mana, Ryan High and every other production voice download from this repository only after the user first plays that voice, then remain cached locally. The private source repository never serves model downloads. The interface can use any of the same 49 languages.
 

@@ -12,7 +12,7 @@ import subprocess
 import time
 import urllib.request
 
-REPO = os.environ.get('GH_REPO', 'Masih-Roughani/Piper-TTS-voice-assets')
+REPO = os.environ.get('GH_REPO', 'Masih-Roughani/Navahang-voice-assets')
 TAG = 'v3'
 DIRECTORY = pathlib.Path('downloads')
 DIRECTORY.mkdir(exist_ok=True)

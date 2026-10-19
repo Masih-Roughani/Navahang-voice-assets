@@ -1,4 +1,4 @@
-The catalog covers 49 language families. Mana and Ryan High are bundled with Piper Page Reader; other production voices download on demand and remain cached on the device.
+The catalog covers 49 language families. No voice weights are bundled with Navahang; Ganji is the default Persian voice and every production voice downloads on demand after the user first plays it, then remains cached on the device.
 
 This release adds 46 eSpeak-compatible languages, Ganji and Mana, together with their original configuration and attribution cards. Existing Gooya/Ryan assets remain pinned to v1 and Thorsten to v2. Model sizes and SHA-256 digests are listed in voices-v3.json and checked before inference.
 
