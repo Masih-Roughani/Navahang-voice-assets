@@ -1,13 +1,15 @@
-# Browser extension privacy policy
+# Navahang privacy policy
 
-Last updated: 2026-10-19
+Last updated: 2026-10-21
 
-The extension reads the page that the user explicitly asks it to read. Page text, selected text, language detection, diacritization, phonemization, summarization, translation and audio generation are processed locally in the extension and are not sent to an extension server or analytics service.
+Navahang reads the page that the user explicitly asks it to read. By default, page text, selected text, language detection, diacritization, phonemization, summarization, translation and audio generation are processed locally in the extension and are not sent to a Piper server or an analytics service.
 
-The extension stores only local preferences, downloaded voice files and short-lived session state in Chrome storage. Session state can include the current page selection while an action is running and is removed by Chrome when the session ends. The extension does not sell, share or use page content for advertising, profiling or training.
+The user may explicitly choose **Personal OpenAI API** and paste their own API key. The key is saved only in `chrome.storage.local`, is sent only to `api.openai.com` as an authorization credential, and can be cleared in the extension settings. It is never sent to the Navahang developer or included in reading session payloads. The user separately controls whether this API may receive text for important-content selection, summaries, translations, questions/explanations, and voice generation. Features whose API scope is disabled continue to use Built-in AI or local processing. When API voice generation is enabled, Navahang clearly identifies it as AI-generated and sends each spoken text segment to OpenAI to return a WAV file. OpenAI's own API data controls and retention terms apply to those opt-in requests.
 
-No voice weight is bundled with or downloaded during extension installation. When the user first plays a voice, Chrome requests its weight from this repository's GitHub Releases. A pinned official upstream URL may be used only if the release asset is unavailable. Those hosts may receive the normal network request metadata required to serve the file. Voice files are cached locally and can be removed by clearing the extension's data.
+The extension stores only local preferences (including an optional personal API key), downloaded voice files and short-lived session state in Chrome storage. Session state can include the current page selection while an action is running and is removed by Chrome when the session ends. The extension does not sell, share or use page content for advertising, profiling or training.
 
-The extension requests access to ordinary `http` and `https` pages only so it can capture the text selected by the user, inspect the page when no selection exists, and draw the optional word underline. It does not read restricted browser pages such as `chrome://` pages.
+No voice weight is bundled with or downloaded during extension installation. When the user first plays a voice, Chrome requests its weight from the public Navahang voice-assets GitHub Releases repository. A pinned official upstream URL may be used only if the release asset is unavailable. Those hosts may receive the normal network request metadata required to serve the file. Voice files are cached locally and can be removed by clearing the extension's data.
 
-For privacy questions, open an issue in this repository. The extension's development source repository is private and is not used to deliver voice files.
+The extension requests access to ordinary `http` and `https` pages only so it can capture the text selected by the user, find important page text when no selection exists, and draw the optional word underline. It does not read restricted browser pages such as `chrome://` pages.
+
+For privacy questions, open an issue in the public [voice-assets and support repository](https://github.com/Masih-Roughani/Navahang-voice-assets/issues). The extension's development source repository is private.
